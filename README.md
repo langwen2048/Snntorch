@@ -2,50 +2,55 @@
 
 [English](README.md) | [中文](README_zh.md)
 
-触觉传感器 MuJoCo 仿真环境，提供以下功能：
+The MuJoCo simulation environment for haptic sensors provides the following features:
 
-- 通用触觉传感器模组
-    - 接近觉
-    - 触觉：切向力、法向力、切向力方向（0~360度，指尖为0）
-- 带触觉的灵巧手
+- General tactile sensor module
+    - Proximity Sensing
+    - Tactile: tangential force, normal force, direction of tangential force (0-359 degrees, with the fingertip at 0)
+- A dexterous hand with haptics
 
 
-## 安装
+## Installation
 
 ```bash
 pip install mujoco==3.2.3
 ```
 
-## Mujoco模型
+## Mujoco Models
 
-可用的触觉传感器模型：
+Model with tactile sensor:
 
 ```bash
-# 通用触觉传感器模组
+# General tactile sensor module
 python -m mujoco.viewer --mjcf=./mujoco_model/TSModule.xml
 
-# 带触觉的灵巧手
+# Tactile dexterous hand
 python -m mujoco.viewer --mjcf=./mujoco_model/DexHand.xml
 ```
 
-注册的传感器回调函数：
+Registered sensor callback function:
 
 ```bash
 # windows
-TSensor.pyd
+mjcb_sensor/win/TSensor.pyd
 
 # linux
-TSensor.so
+mjcb_sensor/linux/TSensor.so
 ```
 
-## 测试场景
+## Test Scenario
 
-通用触觉模组：
+General tactile module:
 ```bash
 python module_test.py
 ```
 
-灵巧手五指握抓：
+Dexterous hand five fingers grasp:
 ```bash
 python dexhand_grab.py
 ```
+
+
+## License
+
+Copyright 2025 TASHan. Licensed under the Apache License, Version 2.0.
