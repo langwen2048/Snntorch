@@ -21,7 +21,7 @@
 pip install mujoco==3.2.3
 ```
 
-    查看模型：在终端或命令提示符中运行以下命令，查看通用触觉传感器模组的模型：
+查看模型：在终端或命令提示符中运行以下命令，查看通用触觉传感器模组的模型：
 ```bash
 python -m mujoco.viewer --mjcf=./mujoco_model/TS-F-A.xml
 ```
@@ -29,7 +29,7 @@ python -m mujoco.viewer --mjcf=./mujoco_model/TS-F-A.xml
 ![通用模组](ts-f-a.png)
 
 
-    查看带触觉的灵巧手模型：
+查看带触觉的灵巧手模型：
 ```bash
 python -m mujoco.viewer --mjcf=./mujoco_model/DexHand.xml
 ```
@@ -73,50 +73,5 @@ A：在 Windows 系统下，确保 TSensor.pyd文件的路径正确，并且检�
 
 ## 六、贡献与反馈
 我们欢迎全球范围内的生态伙伴共同参与本平台的训练与优化，贡献各自的技术力量和创意。如果您在使用过程中发现任何问题或有任何建议，欢迎通过以下方式与我们联系：
-GitHub 仓库：在我们的[https://github.com/zh-run/DexTactiSim.git]提交问题。
-邮箱 ：您也可以通过发送邮件至[zhangrun@tashantec.com]与我们联系。
-
-
-
-
-
-
-
-## Mujoco模型
-
-带触觉传感器模型：
-
-```bash
-# 通用触觉传感器模组
-python -m mujoco.viewer --mjcf=./mujoco_model/TSModule.xml
-
-# 带触觉的灵巧手
-python -m mujoco.viewer --mjcf=./mujoco_model/DexHand.xml
-```
-
-注册的传感器回调函数：
-
-```bash
-# windows
-mjcb_sensor/win/TSensor.pyd
-
-# linux
-mjcb_sensor/linux/TSensor.so
-```
-
-## 测试场景
-
-通用触觉模组：
-```bash
-python module_test.py
-```
-
-灵巧手五指握抓：
-```bash
-python dexhand_grab.py
-```
-
-
-## License
-
-Copyright 2025 TaSHan. 基于 Apache License 2.0 授权。
+GitHub 仓库：在我们的[https://github.com/zh-run/DexTactiSim.git] 提交问题。
+邮箱 ：您也可以通过发送邮件至[zhangrun@tashantec.com] 与我们联系。
