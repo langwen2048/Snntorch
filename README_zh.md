@@ -22,7 +22,7 @@
     ```
 
 - 查看模型：
-    在终端或命令提示符中运行以下命令，查看通用触觉传感器模组的模型：
+    - 查看通用触觉传感器模组的模型：
     ```bash
     python -m mujoco.viewer --mjcf=./mujoco_model/TS-F-A.xml
     ```
@@ -31,7 +31,7 @@
 ![通用模组](ts-f-a.png)
 
 
-    查看带触觉的灵巧手模型：
+    - 查看带触觉的灵巧手模型：
     ```bash
     python -m mujoco.viewer --mjcf=./mujoco_model/DexHand.xml
     ```
