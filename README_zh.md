@@ -41,6 +41,7 @@
 ![带触觉的灵巧手模型](mujoco/sensor_data/assets/dexhand.png)
 
 2. 调用传感器回调函数:<br>
+
    为了使模型能够准确地模拟触觉传感器的数据输出，您需要调用传感器回调函数。根据您的操作系统，分别使用以下文件：
     ```bash
     Windows ：mujoco/mjcb_sensor/win/TSensor.pyd
