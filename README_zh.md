@@ -21,6 +21,14 @@
 pip install mujoco==3.2.3
 ```
 
+查看模型：在终端或命令提示符中运行以下命令，查看通用触觉传感器模组的模型：
+```bash
+python -m mujoco.viewer --mjcf=./mujoco_model/TS-F-A.xml
+```
+这将启动 MuJoCo 观察器，您可以在其中查看通用触觉传感器模组的模型，观察其外观和内部结构。
+![通用模组](ts-f-a.png)
+
+
 ## Mujoco模型
 
 带触觉传感器模型：
