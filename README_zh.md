@@ -79,5 +79,5 @@ A：在 Windows 系统下，确保 TSensor.pyd文件的路径正确，并且检�
 
 ## 贡献与反馈
 我们欢迎全球范围内的生态伙伴共同参与本平台的训练与优化，贡献各自的技术力量和创意。如果您在使用过程中发现任何问题或有任何建议，欢迎通过以下方式与我们联系：
-GitHub 仓库：在我们的[https://github.com/zh-run/DexTactiSim.git] 提交问题。
+GitHub 仓库：在我们的[https://github.com/zh-run/DexTactiSim.git] 提交问题。<br>
 邮箱 ：您也可以通过发送邮件至[zhangrun@tashantec.com] 与我们联系。
