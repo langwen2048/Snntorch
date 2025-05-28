@@ -11,13 +11,13 @@
 
 ## 三、安装指南
 1. 安装：在开始使用本平台之前，请确保您的系统满足以下要求并按照步骤进行安装。
--- 环境要求
+- 环境要求
 ```bash
 操作系统：Windows 或 Linux
 Python 版本：3.8 或以上
 ```   
 
--- python环境MuJoCo安装
+- python环境MuJoCo安装
 ```bash
 pip install mujoco==3.2.3
 ```
