@@ -23,20 +23,20 @@
 
 - 查看模型：
     - 查看通用触觉传感器模组的模型：
-    ```bash
-    python -m mujoco.viewer --mjcf=./mujoco_model/TS-F-A.xml
-    ```
+        ```bash
+        python -m mujoco.viewer --mjcf=./mujoco_model/TS-F-A.xml
+        ```
 
-    这将启动 MuJoCo 观察器，您可以在其中查看通用触觉传感器模组的模型，观察其外观和内部结构。
+        这将启动 MuJoCo 观察器，您可以在其中查看通用触觉传感器模组的模型，观察其外观和内部结构。
 ![通用模组](ts-f-a.png)
 
 
     - 查看带触觉的灵巧手模型：
-    ```bash
-    python -m mujoco.viewer --mjcf=./mujoco_model/DexHand.xml
-    ```
+        ```bash
+        python -m mujoco.viewer --mjcf=./mujoco_model/DexHand.xml
+        ```
 
-    这将启动 MuJoCo 观察器，显示带触觉的灵巧手模型，您可以观察及控制其各个关节运动和触觉传感器的布局。
+        这将启动 MuJoCo 观察器，显示带触觉的灵巧手模型，您可以观察及控制其各个关节运动和触觉传感器的布局。
 ![带触觉的灵巧手模型](dexhand.png)
 
 2. 调用传感器回调函数 ：为了使模型能够准确地模拟触觉传感器的数据输出，您需要调用传感器回调函数。根据您的操作系统，分别使用以下文件：
