@@ -1,6 +1,6 @@
 # 他山科技触觉模拟仿真平台使用手册
 
-[中文](README_zh.md)
+[中文](README.md)
 
 ## 简介
 欢迎使用他山科技触觉模拟仿真平台！本平台基于 MuJoCo 开发，旨在为研究人员和开发者提供一个高效、精准的机器人触觉模拟环境，助力机器人触觉感知技术的研究与创新。我们的模型是国内首个基于真实产品的触觉模拟仿真模型，对推动具身智能机器人的发展具有重要意义。
@@ -24,25 +24,25 @@
 - 查看模型：
     - 查看通用触觉传感器模组的模型：
         ```bash
-        python -m mujoco.viewer --mjcf=./mujoco_model/TS-F-A.xml
+        python -m mujoco.viewer --mjcf=./mujoco/mujoco_model/TS-F-A.xml
         ```
 
         这将启动 MuJoCo 观察器，您可以在其中查看通用触觉传感器模组的模型，观察其外观和内部结构。
-![通用模组](ts-f-a.png)
+![通用模组](mujoco/sensor_data/assets/ts-f-a.png)
 
 
     - 查看带触觉的灵巧手模型：
         ```bash
-        python -m mujoco.viewer --mjcf=./mujoco_model/DexHand.xml
+        python -m mujoco.viewer --mjcf=./mujoco/mujoco_model/DexHand.xml
         ```
 
         这将启动 MuJoCo 观察器，显示带触觉的灵巧手模型，您可以观察及控制其各个关节运动和触觉传感器的布局。
-![带触觉的灵巧手模型](dexhand.png)
+![带触觉的灵巧手模型](mujoco/sensor_data/assets/dexhand.png)
 
 2. 调用传感器回调函数 ：为了使模型能够准确地模拟触觉传感器的数据输出，您需要调用传感器回调函数。根据您的操作系统，分别使用以下文件：
     ```bash
-    Windows ：mjcb_sensor\win\TSensor.pyd
-    Linux ：mjcb_sensor\linux\TSensor.so
+    Windows ：mujoco/mjcb_sensor/win/TSensor.pyd
+    Linux ：mujoco/mjcb_sensor/linux/TSensor.so
     ```
 
     请将相应的文件放置在您的项目目录中，并确保其路径正确。
@@ -50,11 +50,13 @@
 3. 测试通用触觉模组：
     - 测试通用触觉模组：该测试脚本将模拟触觉传感器在不同接触情况下的数据输出，并验证模型的准确性和稳定性。
     ```bash
+    cd mujoco
     python module_test.py
     ```
 
     - 测试灵巧手五指握抓：该测试脚本将模拟灵巧手进行物体的抓取和握持操作，展示其触觉感知能力在实际操作中的应用。
     ```bash
+    cd mujoco
     python dexhand_grab.py
     ```
 
@@ -79,5 +81,5 @@ A：在 Windows 系统下，确保 TSensor.pyd文件的路径正确，并且检�
 
 ## 贡献与反馈
 我们欢迎全球范围内的生态伙伴共同参与本平台的训练与优化，贡献各自的技术力量和创意。如果您在使用过程中发现任何问题或有任何建议，欢迎通过以下方式与我们联系：
-GitHub 仓库：在我们的[https://github.com/zh-run/DexTactiSim.git] 提交问题。<br>
+GitHub 仓库：在我们的[https://github.com/TashanTec/TactiSim.git] 提交问题。<br>
 邮箱 ：您也可以通过发送邮件至[zhangrun@tashantec.com] 与我们联系。
