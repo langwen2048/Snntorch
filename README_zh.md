@@ -30,7 +30,7 @@
 ![通用模组](ts-f-a.png)
 
 
-查看带触觉的灵巧手模型：
+    查看带触觉的灵巧手模型：
     ```bash
     python -m mujoco.viewer --mjcf=./mujoco_model/DexHand.xml
     ```
